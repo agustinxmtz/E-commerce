@@ -13,9 +13,9 @@ DB_PW='password' (replace password with your MySQL password)
 
 For further instructions, see the following videos:
 
-[Creating Database]()
+[Creating Database](https://drive.google.com/file/d/1xR8nlPrTFwIIHnIqInZanDGT0V3VrNrr/view)
 
-[Testing the Data]()
+[Testing the Data](https://drive.google.com/file/d/1EVSwB7f7OV1MgWKbDfU51S9IYwATvFce/view)
 
 ## Tools
 * Node.js: [download](https://nodejs.org/en/download/)
