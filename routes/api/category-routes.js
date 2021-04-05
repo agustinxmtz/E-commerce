@@ -2,9 +2,7 @@
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
-// The `/api/categories` endpoint
 
-//GET all categories
 router.get('/', (req, res) => {
   Category.findAll({
     include: [
@@ -20,7 +18,7 @@ router.get('/', (req, res) => {
     });
 });
 
-//GET individual category based on id
+
 router.get('/:id', (req, res) => {
   Category.findOne({
     where: {
@@ -39,7 +37,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-//POST a new category
+
 router.post('/', (req, res) => {
   Category.create({
     category_name: req.body.category_name
@@ -51,7 +49,7 @@ router.post('/', (req, res) => {
     });
 });
 
-//PUT (UPDATE) a category based on id
+
 router.put('/:id', (req, res) => {
   Category.update({
     category_name: req.body.category_name
@@ -68,7 +66,7 @@ router.put('/:id', (req, res) => {
     })
 });
 
-//DELETE a category based on id
+
 router.delete('/:id', (req, res) => {
   Category.destroy({
     where: {
